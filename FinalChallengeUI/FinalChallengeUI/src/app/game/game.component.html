@@ -1,0 +1,29 @@
+<table>
+    <thead>
+        <tr>
+            <th>game ID</th>
+            <th>game venue</th>
+            <th>game date</th>
+            <th>game time</th>
+            <th>court cost</th>
+            <th>paid by</th>
+            <th>options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of GamesList">
+            <td>{{dataItem.GAMEID}}</td>
+            <td>{{dataItem.GAMEVENUE}}</td>
+            <td>{{dataItem.GAMEDATE}}</td>
+            <td>{{dataItem.GAMETIME}}</td>
+            <td>{{dataItem.GAMECOST}}</td>
+            <td>{{dataItem.USERNAME}}</td>
+            <td>
+                <button type="button">finish</button>
+            </td>
+            <td>
+                <button type="button">forfeit</button>
+            </td>
+        </tr> 
+    </tbody>
+</table>
